@@ -1,0 +1,87 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containar {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.cube {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: spin 4s ease-in-out infinite;
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+.cube__face--front {
+    background-color: #15ff00;
+    transform: translateZ(100px);
+}
+
+.cube__face--back {
+    background-color: #00ffff;
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.cube__face--right {
+    background-color: #ff00ff;
+    transform: translateZ(100px) rotateY(270deg);
+    transform-origin: top right;
+}
+
+.cube__face--left {
+    background-color: #ffff00;
+    transform: translateZ(-100px) rotateY(270deg);
+    transform-origin: center left;
+}
+
+.cube__face--top {
+    background-color: #0000ff;
+    transform: translateZ(100px) rotateX(-90deg);
+    transform-origin: top center;
+}
+
+.cube__face--bottom {
+    background-color: #ff0000;
+    transform: translateZ(100px) rotateX(90deg) rotateY(180deg);
+    transform-origin: bottom center;
+}
+
+
+/**** Animation spin ****/
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(540deg) rotateY(540deg);
+    }
+}
