@@ -6,7 +6,7 @@ Création d'un cube 3D qui m'a permis de travailler sur la perspective.
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/exercice_cube_3D/
 
 ## Projet développé avec
 
