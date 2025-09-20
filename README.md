@@ -1,5 +1,7 @@
 ## EXERCICE : CREATION D'UN CUBE 3D
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Création d'un cube 3D qui m'a permis de travailler sur la perspective.
